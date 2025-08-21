@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="bg-gray-800 text-white w-64 flex-shrink-0">
+      <div class="p-6">
+        <h1 class="text-2xl font-bold">Advanced Portal</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="p-4 hover:bg-gray-700 cursor-pointer">
+            <a href="#" class="flex items-center space-x-3">
+              <span class="material-icons">dashboard</span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="p-4 hover:bg-gray-700 cursor-pointer">
+            <a href="#" class="flex items-center space-x-3">
+              <span class="material-icons">bar_chart</span>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li class="p-4 hover:bg-gray-700 cursor-pointer">
+            <a href="#" class="flex items-center space-x-3">
+              <span class="material-icons">settings</span>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="p-4 hover:bg-gray-700 cursor-pointer">
+            <a href="#" class="flex items-center space-x-3">
+              <span class="material-icons">logout</span>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+      <!-- Header -->
+      <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800">Dashboard</h2>
+          <p class="text-sm text-gray-500">Welcome to your advanced dashboard</p>
+        </div>
+        <div class="relative">
+          <button class="bg-gray-100 text-gray-800 px-4 py-2 rounded hover:bg-gray-200 focus:outline-none">
+            Notifications
+          </button>
+          <div class="absolute right-0 mt-2 bg-white shadow-lg rounded w-64 hidden">
+            <!-- Notifications Dropdown -->
+            <ul>
+              <li class="p-2 border-b">Notification 1</li>
+              <li class="p-2 border-b">Notification 2</li>
+              <li class="p-2">Notification 3</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <main class="flex-1 p-6 overflow-y-auto">
+        <!-- Stats Section -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-sm font-semibold text-gray-600">Total Users</h3>
+            <p class="text-2xl font-bold text-gray-800 mt-2">1,234</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-sm font-semibold text-gray-600">Revenue</h3>
+            <p class="text-2xl font-bold text-gray-800 mt-2">$45,678</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-sm font-semibold text-gray-600">Orders</h3>
+            <p class="text-2xl font-bold text-gray-800 mt-2">567</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-sm font-semibold text-gray-600">Support Tickets</h3>
+            <p class="text-2xl font-bold text-gray-800 mt-2">78</p>
+          </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div class="bg-white rounded shadow p-6">
+            <h4 class="text-lg font-semibold text-gray-700">Recent Activity</h4>
+            <ul class="mt-4 text-gray-600 text-sm">
+              <li class="mb-2">User X logged in</li>
+              <li class="mb-2">New order received</li>
+              <li class="mb-2">Ticket #123 resolved</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded shadow p-6">
+            <h4 class="text-lg font-semibold text-gray-700">Top Products</h4>
+            <ul class="mt-4 text-gray-600 text-sm">
+              <li class="mb-2">Product A - 345 sales</li>
+              <li class="mb-2">Product B - 290 sales</li>
+              <li class="mb-2">Product C - 210 sales</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded shadow p-6">
+            <h4 class="text-lg font-semibold text-gray-700">Monthly Goals</h4>
+            <ul class="mt-4 text-gray-600 text-sm">
+              <li class="mb-2">Reach $50,000 revenue</li>
+              <li class="mb-2">Onboard 100 new users</li>
+              <li class="mb-2">Resolve 90% tickets within SLA</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

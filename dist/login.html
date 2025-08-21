@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="Images/Favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-blue-50 h-screen flex items-center justify-center bg-[url(login_background.jpg)] bg-cover ">
+  <div class=" shadow-lg bg-slate-400 opacity-100 bg-opacity-60 rounded-lg p-8 max-w-sm w-full">
+    <h1 class="text-3xl font-semibold text-center text-white mb-6">Hospital Login</h1>
+    <form>
+      <!-- Email -->
+      <div class="mb-4">
+        <label for="email" class="block text-black font-medium mb-2">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+      </div>
+      <!-- Password -->
+      <div class="mb-4">
+        <label for="password" class="block text-black font-medium mb-2">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" class="w-full bg-white text-blue-500 font-extrabold text- py-2 rounded-lg hover:bg-blue-500 transition duration-200 hover:text-white">Login</button>
+    </form>
+    <!-- Additional Links -->
+    <div class="text-center mt-4 text-sm text-gray-600">
+      <p>
+        <a href="forgotten.html" class="text-blue-900 hover:underline">Forgot Password?</a>
+      </p>
+      <p class="mt-2 text-black">
+        Don’t have an account? 
+        <a href="registration.html" target="_blank" class="text-blue-900 hover:underline">Register</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
